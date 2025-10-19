@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './usuario.css'
 })
 export class Usuario {
-  usuario: string = 'Usuário de exemplo';
+  usuario: string = 'Rafael Maranhão';
 
   constructor() { }
 }
