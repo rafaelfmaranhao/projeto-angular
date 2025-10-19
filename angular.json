@@ -21,10 +21,12 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
               }
             ],
             "styles": [
+              "node_modules/animate.css/animate.min.css",
               "src/styles.css"
             ]
           },

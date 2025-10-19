@@ -3,12 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-usuario',
+  selector: 'app-itens',
   imports: [FormsModule, CommonModule],
-  templateUrl: './usuario.html',
-  styleUrl: './usuario.css'
+  templateUrl: './itens.html',
+  styleUrl: './itens.css'
 })
-export class Usuario {
+export class Itens {
   usuario: string = 'Rafael Maranhão';
 
   constructor() { }
