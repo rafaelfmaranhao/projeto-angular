@@ -1,0 +1,12 @@
+<body>
+    <app-header></app-header>
+    <div class="slider">
+        <div class="slides" [style.transform]="slides">
+            <img src="https://picsum.photos/800/400?1" alt="">
+            <img src="https://picsum.photos/800/400?2" alt="">
+            <img src="https://picsum.photos/800/400?3" alt="">
+        </div>
+        <button class="btn prev" (click)="moverSlide(-1)">❮</button>
+        <button class="btn next" (click)="moverSlide(1)">❯</button>
+    </div>
+</body>
