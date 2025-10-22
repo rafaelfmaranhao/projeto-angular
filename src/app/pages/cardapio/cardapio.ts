@@ -4,7 +4,7 @@ import { Header } from "../../components/header/header";
 
 @Component({
   selector: 'app-cardapio',
-  imports: [Itens, Header],
+  imports: [Header, Itens],
   templateUrl: './cardapio.html',
   styleUrl: './cardapio.css'
 })

@@ -9,7 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './itens.css'
 })
 export class Itens {
-  usuario: string = 'Rafael Maranhão';
 
-  constructor() { }
 }

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
-import { Cardapio } from '../cardapio/cardapio';
 
 @Component({
   selector: 'app-login',

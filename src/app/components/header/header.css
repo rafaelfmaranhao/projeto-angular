@@ -1,11 +1,12 @@
 .header {
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    background-color: #f5f5f5;
+    padding: 18px;
+    background-color: #ff5410;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 100%;
     position: relative;
+    border-bottom: 2px solid black;
 }
 
 .center {
@@ -20,13 +21,13 @@ nav ul {
     gap: 10px;
 }
 
-nav a {
+nav a, .logo {
     text-decoration: none;
     color: #333333;
 }
 
 input {
-    background-color: #f5f5f5;
+    background-color: #ff5410;
     border: 0;
     border-radius: 6px;
     padding: 10px;
@@ -36,7 +37,8 @@ input {
 }
 
 input:hover {
-    background-color: #ff5410;
-    transition: 0.3s;
+    background-color: #ff7038;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.2s;
     color: white;
 }
