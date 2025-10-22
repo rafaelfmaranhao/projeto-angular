@@ -36,7 +36,7 @@ input {
 }
 
 input:hover {
-    background-color: #333333;
+    background-color: #ff5410;
     transition: 0.3s;
     color: white;
 }
