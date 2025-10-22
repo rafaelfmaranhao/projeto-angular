@@ -1,12 +1,38 @@
 <body>
     <app-header></app-header>
     <div class="slider">
-        <div class="slides" [style.transform]="getTransform()">
-            <img src="https://picsum.photos/800/400?1" alt="">
-            <img src="https://picsum.photos/800/400?2" alt="">
-            <img src="https://picsum.photos/800/400?3" alt="">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="/img/IMG-1-800PX.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/img/IMG-3-800PX.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="" alt="">
+            </div>
+            <div class="slide">
+                <img src="" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
         </div>
-        <button class="btn prev" (click)="moverSlide(-1)">❮</button>
-        <button class="btn next" (click)="moverSlide(1)">❯</button>
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
     </div>
 </body>
