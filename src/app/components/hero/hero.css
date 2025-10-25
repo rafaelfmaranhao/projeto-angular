@@ -1,12 +1,16 @@
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 3rem;
+    font-size: 20px;
+    background-color: #F28705;
+    color: red;
 }
 
-section {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 75%;
-}
+.txt:hover {
+    text-align: left;
+    width: 95%;
+    font-family: 'Inter', sans-serif;
+    color: red;
+}       
