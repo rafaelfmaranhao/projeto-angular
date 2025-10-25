@@ -1,7 +1,7 @@
-h1 {
+.logomarca {
     display: flex;
 }
 
 .dev {
-    color: rgb(0, 81, 255);
+    color: rgb(40, 115, 255);
 }

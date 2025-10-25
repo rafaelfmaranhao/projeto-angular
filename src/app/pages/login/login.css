@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: rgb(255, 200, 128);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .login {
@@ -10,24 +12,64 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid #5770ff;
-    border-radius: 6px;
-    padding: 15px;
-    background-color: #5770ff;
+    border: 2px solid #ff6021;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(04, 03, 05, .30);
+    padding: 50px;
+    background-color: #ffffff;
 }
 
-.input {
-    border: 2px solid rgb(170, 170, 170);
-    border-radius: 6px;
-    margin-bottom: 10px;
-    padding: 10px;
+.inputBox {
+    position: relative;
+    width: 350px;
+}
+
+.inputBox input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 1.10rem;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    left: 0;
+    font-size: .90rem;
+    transform: translateY(-32px);
+}
+
+.inputBox span {
+    position: absolute;
+    left: 5px;
+    padding: 10px 0;
+    color: #040305;
+    font-size: 1rem;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.inputBox hr {
+    background-color: lightgray;
+    border: 0;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 2px;
+}
+
+.inputBox input:hover ~ hr {
+    transition: 0.3s;
+    background-color: #e94606;
 }
 
 .button {
     padding: 10px;
     margin: 10px;
+    cursor: pointer;
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }

@@ -1,9 +1,19 @@
 <div class="container">
     <div class="login">
-        <h1 class="animate__animated animate__fadeInLeftBig">Bem-vindo ao DevBurger</h1>
-        <label>Usuário: <input type="text" placeholder="Seu usuário" class="input"></label>
-        <label>Senha: <input type="password" placeholder="Sua senha" class="input"></label>
-        <div class="buttons">
+        <h1 class="animate__animated animate__fadeInLeftBig">Bem-vindo ao <app-logomarca></app-logomarca></h1>
+        <div class="inputBox">
+            <div>
+                <input type="text" class="inputText" required>
+                <span>Usuário</span>
+                <hr>
+            </div>
+                <div><input type="password" class="inputText" required>
+                <span>Senha</span>
+                <hr>
+            </div>
+        </div>
+
+        <div class="buttonBox">
             <input type="button" value="Entrar" routerLink="" class="button">
             <input type="button" value="Redefinir Senha" routerLink="redefinir" class="button">
         </div>
