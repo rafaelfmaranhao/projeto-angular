@@ -5,12 +5,12 @@
     padding-left: 3rem;
     font-size: 20px;
     background-color: #F28705;
+    align-items: center;
 
 }
-
-.txt:hover {
-    text-align: left;
-    width: 95%;
-    font-family: 'Inter', sans-serif;
+p {
     color: red;
-}       
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 22px;
+    align-items: center;
+}
