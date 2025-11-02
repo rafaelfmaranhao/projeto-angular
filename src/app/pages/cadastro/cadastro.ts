@@ -2,38 +2,37 @@ import { Component } from '@angular/core';
 import { Logomarca } from "../../components/logomarca/logomarca";
 import { Btn } from '../../components/btn/btn';
 import { BtnInfo } from '../../model/btn';
-import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-cadastro',
   imports: [Logomarca, Btn, FormsModule],
-  templateUrl: './login.html',
-  styleUrl: './login.css'
+  templateUrl: './cadastro.html',
+  styleUrl: './cadastro.css'
 })
-export class Login {
+export class Cadastro {
   nomeUsuario = '';
   senha = '';
   mensagem = '';
 
   constructor(private auth: AuthService, private router: Router) {}
 
-  login() {
-    const result = this.auth.login({ nomeUsuario: this.nomeUsuario, senha: this.senha });
+  cadastrar() {
+    const resultado = this.auth.cadastrar({ nomeUsuario: this.nomeUsuario, senha: this.senha });
+    this.mensagem = resultado.message;
 
-    if (result.success) {
-      this.router.navigate(['/']);
-    } else {
-      this.mensagem = result.message || 'Erro no login!';
+    if (resultado.success) {
+      setTimeout(() => this.router.navigate(['/login']), 1500);
     }
   }
 
   btnInfo: BtnInfo[] = [
     {
       tipo: 'button',
-      valor: 'Cadastrar-se',
-      link: '/cadastro'
+      valor: 'Voltar ao Login',
+      link: '/login'
     }
   ]
 }

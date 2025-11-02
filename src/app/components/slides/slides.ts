@@ -7,9 +7,11 @@ import { Component, AfterViewInit, OnDestroy } from '@angular/core';
   styleUrl: './slides.css'
 })
 export class Slides implements AfterViewInit, OnDestroy {
+  private itens = document.getElementsByClassName('slide');
+  private totalItens = this.itens.length;
   private count = 1;
   private intervalId: any;
-
+  
   ngAfterViewInit(): void {
     // marca o primeiro rádio se existir
     const first = document.getElementById('radio1') as HTMLInputElement | null;

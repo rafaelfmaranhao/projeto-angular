@@ -1,0 +1,19 @@
+<div class="slider-wrapper" (mouseenter)="pause()" (mouseleave)="resume()">
+
+    <div class="slider">
+        <div class="slide animate__animated" [ngClass]="animationClass">
+            {{ frases[indiceAtual] }}
+        </div>
+    </div>
+
+    <!--
+    <button class="nav prev" (click)="anterior()">‹</button>
+    <button class="nav next" (click)="proximo()">›</button>
+    -->
+
+    <div class="dots">
+        <button *ngFor="let frase of frases; let i = index" class="dot" [attr.aria-selected]="i === indiceAtual"
+            (click)="irPara(i)">
+        </button>
+    </div>
+</div>

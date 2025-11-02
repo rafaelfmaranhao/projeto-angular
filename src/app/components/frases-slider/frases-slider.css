@@ -1,0 +1,79 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: min(800px, 90vw);
+    padding: 2rem;
+}
+
+.slider {
+    background: linear-gradient(180deg, #111827, #0b1220);
+    border-radius: 16px;
+    padding: 2rem;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.slide {
+    font-size: clamp(18px, 2vw, 26px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #e6eef8;
+}
+
+/* botões */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+}
+
+.prev {
+    left: 12px;
+}
+
+.next {
+    right: 12px;
+}
+
+/* dots */
+.dots {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dot[aria-selected="true"] {
+    background: #ff7a59;
+    transform: scale(1.3);
+}

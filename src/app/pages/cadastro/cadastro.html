@@ -1,7 +1,7 @@
 <div class="container">
-    <div class="login">
+    <div class="cadastro">
         <h1 class="animate__animated animate__fadeInLeftBig">Bem-vindo ao <br> <app-logomarca></app-logomarca></h1>
-        <form (ngSubmit)="login()">
+        <form (ngSubmit)="cadastrar()">
             <div class="inputBox">
                 <div>
                     <input type="text" [(ngModel)]="nomeUsuario" name="nomeUsuario" class="inputText" required>
@@ -13,13 +13,14 @@
                     <span>Senha</span>
                     <hr>
                 </div>
+
                 @if (mensagem) {
                 <p>{{ mensagem }}</p>
                 }
             </div>
             <div class="buttonBox">
-                <button type="submit">Login</button>
-                <app-btn tipo="button" valor="Cadastrar-se" link="/cadastro"></app-btn>
+                <button type="submit">Cadastrar</button>
+                <app-btn tipo="button" valor="Voltar ao login" link="/login"></app-btn>
             </div>
         </form>
 

@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     padding: 18px;
@@ -29,7 +30,7 @@ a {
 
 input {
     background-color: #ff5410;
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 6px;
     padding: 10px;
     cursor: pointer;
@@ -38,7 +39,7 @@ input {
 }
 
 input:hover {
-    background-color: #ff7038;
+    background-color: #ff5410;
     border: 1px solid rgb(255, 255, 255);
     transition: 0.2s;
     color: white;
