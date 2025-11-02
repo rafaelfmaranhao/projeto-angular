@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    align-items: center;
     flex-direction: row;
     padding: 18px;
     background-color: #ff5410;
@@ -21,7 +22,7 @@ nav ul {
     gap: 10px;
 }
 
-nav a, .logo {
+a {
     text-decoration: none;
     color: #333333;
 }
