@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 16px;
+}
+.flash {
+    background-color: white;
+    width: 180px;
+    height: 260px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+.flash div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 50%;
+}
+.flash h1 {
+    font-size: 1.2rem;
+}
+.flash h2 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+.flash button {
+    background-color: #2192FF;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
