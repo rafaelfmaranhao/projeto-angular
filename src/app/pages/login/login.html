@@ -1,6 +1,7 @@
 <div class="container">
     <div class="login">
-        <h1 class="animate__animated animate__fadeInLeftBig">Bem-vindo ao <br> <app-logomarca></app-logomarca></h1>
+        <h1 class="animate__animated animate__fadeInLeftBig"><app-logomarca></app-logomarca></h1>
+        <p>Faça login para compilar o seu pedido</p>
         <form (ngSubmit)="login()">
             <div class="inputBox">
                 <div>
@@ -18,7 +19,7 @@
                 }
             </div>
             <div class="buttonBox">
-                <button type="submit">Login</button>
+                <app-btn tipo="submit" valor="Entrar"></app-btn>
                 <app-btn tipo="button" valor="Cadastrar-se" link="/cadastro"></app-btn>
             </div>
         </form>

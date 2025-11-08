@@ -2,12 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #121216;
 }
 
 .slider-wrapper {
     position: relative;
     width: min(800px, 90vw);
     padding: 2rem;
+    
 }
 
 .slider {

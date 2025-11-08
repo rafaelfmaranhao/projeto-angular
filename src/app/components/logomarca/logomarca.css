@@ -1,9 +1,6 @@
 .logomarca {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.dev {
-    color: rgb(40, 115, 255);
+    background: linear-gradient(90deg,rgba(252, 154, 69, 1) 0%, rgba(253, 59, 29, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
 }
