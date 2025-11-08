@@ -11,5 +11,10 @@
             </ul>
         </nav>
     </div>
-    <p>{{ nomeUsuario }}</p>
+    <div class="user">
+        <p>{{ nomeUsuario }}</p>
+        @if (this.nomeUsuario !== 'Visitante') {
+        <img src="img/sair.png" alt="Sair" (click)="deslogar()">
+        }
+    </div>
 </div>

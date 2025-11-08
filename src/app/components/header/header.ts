@@ -20,8 +20,9 @@ export class Header implements OnInit {
 
     if (!usuario.nomeUsuario) {
       this.nomeUsuario = 'Visitante';
+    } else {
+      this.nomeUsuario = usuario.nomeUsuario;
     }
-    this.nomeUsuario = usuario.nomeUsuario;
   }
 
   deslogar() {

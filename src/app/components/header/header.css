@@ -17,6 +17,12 @@
     transform: translateX(-50%);
 }
 
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -43,4 +49,9 @@ input:hover {
     border: 1px solid rgb(255, 255, 255);
     transition: 0.2s;
     color: white;
+}
+
+img {
+    cursor: pointer;
+    max-height: 27px;
 }
