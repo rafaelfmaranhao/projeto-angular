@@ -10,4 +10,7 @@ input {
     padding: 12px;
     margin: 10px;
     cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
 }

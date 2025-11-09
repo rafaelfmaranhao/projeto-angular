@@ -1,20 +1,26 @@
-<div class="header">
-    <a routerLink="" class="logo">
-        <h1><app-logomarca></app-logomarca></h1>
-    </a>
-    <div class="center">
-        <nav>
-            <ul>
-                <li><input type="button" value="Cardápio" routerLink="/cardapio"></li>
-                <li><input type="button" value="Sobre" routerLink="/sobre"></li>
-                <li><input type="button" value="Login" routerLink="/login"></li>
-            </ul>
-        </nav>
+<header>
+    <div class="container">                                                                                                 
+        <a routerLink="" class="logo">
+            <div class="logo-container">
+                <div class="burger">🍔</div>
+                <lucide-icon name="code"></lucide-icon>
+            </div>
+            <h1><app-logomarca></app-logomarca></h1>
+        </a>
+        <div class="center">
+            <nav>
+                <ul>
+                    <li><input type="button" value="Cardápio" routerLink="/cardapio"></li>
+                    <li><input type="button" value="Sobre" routerLink="/sobre"></li>
+                    <li><input type="button" value="Login" routerLink="/login"></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="user">
+            <p>{{ nomeUsuario }}</p>
+            @if (this.nomeUsuario !== 'Visitante') {
+            <img src="img/sair.png" alt="Sair" (click)="deslogar()" title="Sair">
+            }
+        </div>
     </div>
-    <div class="user">
-        <p>{{ nomeUsuario }}</p>
-        @if (this.nomeUsuario !== 'Visitante') {
-        <img src="img/sair.png" alt="Sair" (click)="deslogar()">
-        }
-    </div>
-</div>
+</header>

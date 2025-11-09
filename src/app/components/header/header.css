@@ -1,14 +1,41 @@
-.header {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 12px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-bottom: rgb(61, 61, 61) 1px solid;
+}
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 18px;
-    background-color: #121212;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 100%;
     position: relative;
-    border-bottom: 2px solid black;
+}
+
+.logo-container .burger {
+    font-size: 36px;
+}
+
+.logo-container lucide-icon {
+    position: absolute;
+    right: -8px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    color: #f97316;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
 }
 
 .center {
@@ -41,7 +68,6 @@ input {
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 input:hover {
@@ -51,7 +77,16 @@ input:hover {
     color: white;
 }
 
+h1 {
+    font-size: 30px;
+}
+
+p {
+    color: white;
+}
+
 img {
     cursor: pointer;
     max-height: 27px;
+    background-color: white;
 }

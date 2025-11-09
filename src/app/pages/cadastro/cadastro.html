@@ -1,7 +1,11 @@
 <div class="container">
     <div class="cadastro">
+        <div class="logo-container">
+            <div class="burger">🍔</div>
+            <lucide-icon name="code"></lucide-icon>
+        </div>
         <h1 class="animate__animated animate__fadeInLeftBig"><app-logomarca></app-logomarca></h1>
-        <p>Faça seu cadastro para compilar o seu pedido</p>
+        <p>Cadastre-se para compilar o seu pedido</p>
         <form (ngSubmit)="cadastrar()">
             <div class="inputBox">
                 <div>
@@ -14,13 +18,12 @@
                     <span>Senha</span>
                     <hr>
                 </div>
-
                 @if (mensagem) {
                 <p>{{ mensagem }}</p>
                 }
             </div>
             <div class="buttonBox">
-                <button type="submit">Cadastrar</button>
+                <app-btn tipo="submit" valor="Entrar"></app-btn>
                 <app-btn tipo="button" valor="Voltar ao login" link="/login"></app-btn>
             </div>
         </form>

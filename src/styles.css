@@ -1,12 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@fontsource/outfit/700.css";
+@import "@fontsource/inter/700.css";
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', 'Inter';
+  font-weight: 700;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: min(100% - 32px, 1500px);
+  margin-inline: auto;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.logo-container .burger {
+  font-size: 48px;
+}
+
+.logo-container lucide-icon {
+  position: absolute;
+  right: -8px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  color: #f97316;
 }

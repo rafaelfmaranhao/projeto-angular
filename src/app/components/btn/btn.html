@@ -1,1 +1,5 @@
-<input [type]="tipo" [value]="valor" [routerLink]="link">
+@if (link != '') {
+    <input [type]="tipo" [value]="valor" [routerLink]="link">
+} @else {
+    <input [type]="tipo" [value]="valor">
+}

@@ -3,10 +3,11 @@ import { RouterLink } from "@angular/router";
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { Logomarca } from '../logomarca/logomarca';
+import { LucideAngularModule } from 'lucide-angular';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, Logomarca],
+  imports: [RouterLink, Logomarca, LucideAngularModule],
   templateUrl: './header.html',
   styleUrl: './header.css'
 })

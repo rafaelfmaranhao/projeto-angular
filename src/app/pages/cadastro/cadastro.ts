@@ -5,10 +5,11 @@ import { BtnInfo } from '../../model/btn';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { FormsModule } from '@angular/forms';
+import { LucideAngularModule } from 'lucide-angular';
 
 @Component({
   selector: 'app-cadastro',
-  imports: [Logomarca, Btn, FormsModule],
+  imports: [Logomarca, Btn, FormsModule, LucideAngularModule],
   templateUrl: './cadastro.html',
   styleUrl: './cadastro.css'
 })

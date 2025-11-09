@@ -1,0 +1,26 @@
+.mais-pedidos {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem
+}
+
+.titulo-secao {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.subtitulo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ff5a1f;
+  font-weight: 600;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}

@@ -1,5 +1,25 @@
 <app-header></app-header>
 <app-slides></app-slides>
-<app-frases-slider></app-frases-slider>
-<app-hero></app-hero>
-<app-flashcards></app-flashcards>
+<section class="mais-pedidos">
+    <div class="container">
+        <div class="titulo-secao">
+            <div class="subtitulo">
+                <lucide-icon name="flame"></lucide-icon>
+                <span>MAIS PEDIDOS</span>
+            </div>
+            <h2>Hambúrgueres em Alta</h2>
+        </div>
+
+        <div class="cards-container">
+            @for (item of flashCard; track $index) {
+            <app-flashcards 
+                [nome]="item.nome" 
+                [preco]="item.preco" 
+                [descricao]="item.descricao"
+                [urlFoto]="item.urlFoto">
+            </app-flashcards>
+            }
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

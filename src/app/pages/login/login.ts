@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { Logomarca } from "../../components/logomarca/logomarca";
 import { Btn } from '../../components/btn/btn';
 import { BtnInfo } from '../../model/btn';
-import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 import { FormsModule } from '@angular/forms';
+import { LucideAngularModule } from 'lucide-angular';
 
 @Component({
   selector: 'app-login',
-  imports: [Logomarca, Btn, FormsModule],
+  imports: [Logomarca, Btn, FormsModule, LucideAngularModule],
   templateUrl: './login.html',
   styleUrl: './login.css'
 })

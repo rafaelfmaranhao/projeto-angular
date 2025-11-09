@@ -1,0 +1,87 @@
+footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 22px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+  top: -5px;
+}
+
+.logo-container lucide-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -1px;
+  left: -15px;
+  width: 20px;
+  height: 20px;
+  color: #f97316;
+}
+
+
+.burger {
+  font-size: 38px;
+}
+h3 {
+  font-size: 16px;
+}
+.diferente {
+  font-size: 32px;
+}
+.txt {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 1px;
+  text-align: left;
+  max-width: 300px;
+}
+.logo-container app-logomarca {
+  position: relative;
+  left: -18px;
+  top: 10px;
+}
+footer .container {
+  display: flex;
+  justify-content: left; 
+  align-items: flex-start;
+  gap: 60px;
+  text-align: left;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+.contato {
+    display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  margin-left: auto;
+}

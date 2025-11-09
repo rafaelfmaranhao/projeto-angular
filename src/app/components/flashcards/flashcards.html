@@ -1,9 +1,15 @@
-<div class="flash">
-    <img src="/img/pexels-lucasandrade-10679779.jpg" alt="">
-</div>
-<div>
-    <h1>titulo</h1>
-    <h2>descrição</h2>
-    <span>29,99</span>
-    <button>Comprar</button>
-</div>
+<main class="itens">
+  <div class="container">
+    <div class="grid" role="list">
+      <article class="card" role="listitem">
+        <img [src]="urlFoto" alt="Burguer Img" />
+        <div class="info">
+            <h3>{{ nome }}</h3>
+            <p class="desc">{{ descricao }}</p>
+            <p class="preco">{{ preco }}</p>
+        </div>
+        <app-btn tipo="button" valor="Comprar"></app-btn>
+      </article>
+    </div>
+  </div>
+</main>

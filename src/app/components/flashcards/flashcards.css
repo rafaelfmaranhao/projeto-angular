@@ -1,44 +1,57 @@
-* {
-    margin: 0;
-    padding: 0;
+main {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    gap: 16px;
+
+main:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
-.flash {
-    background-color: white;
-    width: 180px;
-    height: 260px;
-    border-radius: 12px;
-    box-shadow: 4px 4px 12px #aaaa;
+
+img {
+    width: 100%;
+    height: auto;
 }
-.flash div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    height: 50%;
+
+app-btn {
+    width: 150px;
 }
-.flash h1 {
-    font-size: 1.2rem;
+
+.itens .container {
+    padding: 24px 0;
+    width: 350px;
 }
-.flash h2 {
-    font-size: .9rem;
-    color: #aaaa;
+
+.grid {
+    display: grid;
+    gap: 12px;
 }
-.flash button {
-    background-color: #2192FF;
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 80%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
+
+.card {
+    background: #1f1f1f;
+    border: 1px solid #272727;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: white;
+    margin: 10px 0;
+}
+
+.card .desc {
+    color: #aaa;
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.card .preco {
+    background: linear-gradient(90deg, rgba(252, 154, 69, 1) 0%, rgba(253, 59, 29, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.info {
+    padding: 6px 12px;
 }

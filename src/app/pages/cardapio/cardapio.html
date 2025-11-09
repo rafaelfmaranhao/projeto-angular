@@ -1,2 +1,10 @@
 <app-header></app-header>
-<app-itens></app-itens>
+@for (item of flashCard; track $index) {
+    <app-flashcards 
+        [nome]="item.nome"
+        [preco]="item.preco"
+        [descricao]="item.descricao"
+        [urlFoto]="item.urlFoto">
+    </app-flashcards>
+}
+<app-footer></app-footer>
