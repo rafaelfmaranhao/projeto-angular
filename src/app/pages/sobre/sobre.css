@@ -1,0 +1,30 @@
+.pai {
+    background-color: #121212;
+    margin-top: 75px;
+}
+h1 {
+    background: linear-gradient(90deg,rgba(252, 154, 69, 1) 0%, rgba(253, 59, 29, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.foto {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+.foto img{
+    width: 400px;
+    height: auto;
+}
+.fim { 
+    background: linear-gradient(90deg,rgba(252, 154, 69, 1) 0%, rgba(253, 59, 29, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    margin-left: 435px;
+    margin-right: 435px;
+    margin-top: 20px;
+}

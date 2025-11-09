@@ -1,0 +1,10 @@
+<div class="cards-container">
+    @for (item of flashCardSenior; track $index) {
+    <app-flashcards 
+        [nome]="item.nome" 
+        [preco]="item.preco" 
+        [descricao]="item.descricao" 
+        [urlFoto]="item.urlFoto"
+    ></app-flashcards>
+}
+</div>

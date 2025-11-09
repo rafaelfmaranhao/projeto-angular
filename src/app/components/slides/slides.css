@@ -9,8 +9,8 @@
 .slider {
   position: relative;
   width: 100%;
-  max-width: 750px; /* limite máximo, mas adapta em telas menores */
-  aspect-ratio: 16 / 9; /* mantém proporção */
+  max-width: 750px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -38,7 +38,6 @@
   object-fit: cover;
 }
 
-/* ===== Botões manuais ===== */
 .manual-navigation {
   position: absolute;
   width: 100%;
@@ -60,7 +59,6 @@
   background-color: #f65e00;
 }
 
-/* ===== Navegação automática ===== */
 .navigation-auto {
   position: absolute;
   width: 100%;

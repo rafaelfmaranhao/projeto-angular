@@ -7,10 +7,11 @@ import { Flashcards } from '../../components/flashcards/flashcards';
 import { Footer } from '../../components/footer/footer';
 import { Card } from '../../model/card';
 import { LucideAngularModule } from 'lucide-angular';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [Header, Slides, Flashcards, Footer, LucideAngularModule],
+  imports: [Header, Slides, Flashcards, Footer, LucideAngularModule, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })

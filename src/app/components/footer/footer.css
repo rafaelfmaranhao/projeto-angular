@@ -70,18 +70,43 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  text-decoration: none;
+  transition: 0.3 ease;
 }
+.rapidos:hover {
+  background: linear-gradient(90deg,rgba(252, 154, 69, 1) 0%, rgba(253, 59, 29, 1) 100%);
+  background-clip: text;
+  color: transparent;
+}
+
 .links {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-top: 10px;
 }
-.contato {
-    display: flex;
+.contatos {
+  display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 10px;
   margin-left: auto;
+  gap: 5px;
+  margin-top: 9px;
+}
+.contatos .contato {
+  display: flex;
+  gap: 5px;
+  margin-top: 9px;
+}
+.redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+.rede {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }

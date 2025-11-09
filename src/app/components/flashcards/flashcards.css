@@ -1,36 +1,45 @@
 main {
+    background-color: #111;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-main:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-app-btn {
-    width: 150px;
 }
 
 .itens .container {
     padding: 24px 0;
     width: 350px;
-}
-
-.grid {
-    display: grid;
-    gap: 12px;
+    background-color: #111;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    margin: 4px;
     background: #1f1f1f;
-    border: 1px solid #272727;
+    border: 1px solid #424242;
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    background-color: #141414;
+    transform: translateY(-6px);
+    box-shadow: 0 2px 16px rgba(255, 119, 0, 0.5);
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.1);
+    filter: brightness(0.85);
 }
 
 .card h3 {
@@ -48,10 +57,18 @@ app-btn {
     background: linear-gradient(90deg, rgba(252, 154, 69, 1) 0%, rgba(253, 59, 29, 1) 100%);
     background-clip: text;
     color: transparent;
-    margin: 10px 0;
+    margin-top: 12px;
     font-size: 20px;
 }
 
 .info {
     padding: 6px 12px;
+}
+
+.button {
+    margin-top: auto;
+}
+
+.button app-btn {
+    margin: 6px 4px;
 }

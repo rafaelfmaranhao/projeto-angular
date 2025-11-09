@@ -1,0 +1,29 @@
+<section class="cardapio">
+    <div class="container">
+        <div class="titulo-secao">
+            <h2>Nosso Cardápio</h2>
+            <p>Explore nossa seleção de hambúrgueres artesanais desenvolvidos com os melhores ingredientes</p>
+        </div>
+        <section class="cards-section">
+            <h3>Seção Junior</h3>
+            <div class="cards-container">
+                @for (item of flashCardJunior; track $index) {
+                <app-flashcards 
+                    [nome]="item.nome" 
+                    [preco]="item.preco" 
+                    [descricao]="item.descricao"
+                    [urlFoto]="item.urlFoto"
+                ></app-flashcards>
+                }
+            </div>
+        </section>
+        <section class="cards-section">
+            <h3>Seção Sênior</h3>
+            <app-flashcards-senior></app-flashcards-senior>
+        </section>
+        <section class="cards-section">
+            <h3>Seção Pleno</h3>
+            <app-flashcards-pleno></app-flashcards-pleno>
+        </section>
+    </div>
+</section>
