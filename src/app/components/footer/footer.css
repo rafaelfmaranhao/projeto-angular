@@ -110,3 +110,11 @@ a {
   align-items: center;
   gap: 10px;
 }
+hr {
+  width: 95%;
+  margin: 20px auto;
+  height: 2px;
+  border: none;
+  background-color: #333333;
+  
+}
