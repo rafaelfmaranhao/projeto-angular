@@ -34,13 +34,12 @@ export class AuthService {
   }
 
   // Logout de usuário
-  deslogar() {
+  logout() {
     localStorage.removeItem('usuarioLogado');
-    this.router.navigate(['/login']);
   }
 
   // Verifica se o usuário está logado
-  estaLogado() {
+  isLogged() {
     return !!localStorage.getItem('usuarioLogado');
   }
 }

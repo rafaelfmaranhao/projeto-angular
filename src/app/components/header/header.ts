@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterLink } from "@angular/router";
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
@@ -13,6 +13,7 @@ import { LucideAngularModule } from 'lucide-angular';
 })
 export class Header implements OnInit {
   nomeUsuario = '';
+  menuAberto = false;
 
   constructor(private auth: AuthService, private router: Router) {}
 
@@ -26,7 +27,19 @@ export class Header implements OnInit {
     }
   }
 
-  deslogar() {
-    this.auth.deslogar();
+  toggleMenu() {
+    this.menuAberto = !this.menuAberto;
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    if (window.innerWidth > 768) {
+      this.menuAberto = false;
+    }
+  }
+  
+  logout() {
+    this.auth.logout();
+    window.location.reload();
   }
 }

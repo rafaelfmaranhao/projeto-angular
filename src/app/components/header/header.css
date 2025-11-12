@@ -1,92 +1,123 @@
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #1f1f1f;
-    padding: 12px 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    border-bottom: rgb(61, 61, 61) 1px solid;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    position: relative;
-}
-
-.logo-container .burger {
-    font-size: 36px;
-}
-
-.logo-container lucide-icon {
-    position: absolute;
-    right: -8px;
-    top: 0px;
-    width: 18px;
-    height: 18px;
-    color: #f97316;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-decoration: none;
-}
-
-.center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.user {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #333333;
-}
-
-input {
-    background-color: #ff5410;
-    border: 1px solid transparent;
-    border-radius: 6px;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-input:hover {
-    background-color: #ff5410;
-    border: 1px solid rgb(255, 255, 255);
-    transition: 0.2s;
-    color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding: 12px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-bottom: 1px solid rgb(61, 61, 61);
 }
 
 h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 p {
-    color: white;
+  color: white;
 }
 
-img {
-    cursor: pointer;
-    max-height: 27px;
-    background-color: white;
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s;
+}
+
+nav input {
+  background-color: #ff5410;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+nav input:hover {
+  background-color: #ff5410;
+  border: 1px solid rgb(255, 255, 255);
+  transition: 0.2s;
+  color: white;
+}
+
+lucide-icon {
+  cursor: pointer;
+  height: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container .burger {
+  font-size: 36px;
+}
+
+.logo-container lucide-icon {
+  position: absolute;
+  right: -8px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  color: #f97316;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    padding: 50px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0%;
+    width: 100%;
+    background-color: #1f1f1f;
+    border-top: 1px solid rgb(61, 61, 61);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .nav-icon {
+    display: block;
+  }
 }

@@ -9,17 +9,20 @@
         </a>
         <div class="center">
             <nav>
-                <ul>
+                <ul [class.active]="menuAberto">
                     <li><input type="button" value="Cardápio" routerLink="/cardapio"></li>
                     <li><input type="button" value="Sobre" routerLink="/sobre"></li>
                     <li><input type="button" value="Login" routerLink="/login"></li>
                 </ul>
             </nav>
         </div>
+        <lucide-icon name="SquareMenu" color="#f97316" class="nav-icon" (click)="toggleMenu()"></lucide-icon>
         <div class="user">
             <p>{{ nomeUsuario }}</p>
-            @if (this.nomeUsuario !== 'Visitante') {
-            <img src="img/sair.png" alt="Sair" (click)="deslogar()" title="Sair">
+            @if (nomeUsuario !== 'Visitante') {
+                <lucide-icon name="LogOut" color="white" (click)="logout()" title="Sair"></lucide-icon>
+            } @else {
+                <lucide-icon name="LogIn" color="white" routerLink="/login" title="Entrar"></lucide-icon>
             }
         </div>
     </div>
