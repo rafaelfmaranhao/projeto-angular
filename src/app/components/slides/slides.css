@@ -88,7 +88,6 @@
   background-color: #f65e00;
 }
 
-/* ===== Responsividade ===== */
 @media (max-width: 768px) {
   .sliderarea {
     margin-top: 60px;
@@ -104,7 +103,7 @@
 
 @media (max-width: 480px) {
   .slider {
-    aspect-ratio: 4 / 3; /* mais alto em telas pequenas */
+    aspect-ratio: 4 / 3;
   }
   .manual-btn,
   .navigation-auto div {
